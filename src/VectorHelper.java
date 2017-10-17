@@ -1,7 +1,28 @@
 import java.util.Vector;
 
+  /**
+     * <h1>VectorHelper</h1>
+     * <p>
+     * The VectorHelper class contains several static methods to simplify many Integer vectors'
+     * operations:
+     * Sorting, Addition of two vectors, Reverse elements, Get max and min,
+     * Apply a function to every element
+     * </p>
+     *
+     * @author Abderraouf Safsaf & Mohamed Nadji Souilamas
+     * @version 1.0
+     * @since 2017-10-14
+     */
+
+
 public class VectorHelper{
 
+    /**
+    * This method is used to sort a Vector
+    * @param t it's the Vector to sort ( will contain the result )
+    */
+    
+    
     public static void trierVector(Vector<Integer> t){
 
         boolean ordre = false;
@@ -54,20 +75,12 @@ public class VectorHelper{
 
         return sumVector;
     }
+    
+    
     /**
-     * <h1>VectorHelper</h1>
-     * <p>
-     * The VectorHelper class contains several static methods to simplify many Integer vectors'
-     * operations:
-     * Sorting, Addition of two vectors, Reverse elements, Get max and min,
-     * Apply a function to every element
-     * </p>
-     *
-     * @author Abderraouf Safsaf & Mohamed Nadji Souilamas
-     * @version 1.0
-     * @since 2017-10-14
-     */
-
+    * This method is used to reverse a Vector
+    * t it's the Vector to reverse ( will contain the result )
+    */
     public static void inverserVector(Vector<Integer> t){
 
         int indexMax = t.size() - 1;
