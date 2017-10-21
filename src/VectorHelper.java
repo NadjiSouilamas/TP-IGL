@@ -21,12 +21,10 @@ public class VectorHelper{
     * This method is used to sort a Vector
     * @param t it's the Vector to sort ( will contain the result )
     */
-    
-    
     public static void trierVector(Vector<Integer> t){
 
         boolean ordre = false;
-        int indexMax = t.size() - 1;
+        int indexMax = t.size();
         int x;
         while(!ordre){
 
@@ -42,7 +40,6 @@ public class VectorHelper{
             }
             indexMax--;
         }
-
     }
 
     /**
@@ -79,7 +76,7 @@ public class VectorHelper{
     
     /**
     * This method is used to reverse a Vector
-    * t it's the Vector to reverse ( will contain the result )
+    * @param t it's the Vector to reverse ( will contain the result )
     */
     public static void inverserVector(Vector<Integer> t){
 
@@ -97,7 +94,6 @@ public class VectorHelper{
             t.set(i,x);
 
         }
-
     }
 
     /**
@@ -127,5 +123,18 @@ public class VectorHelper{
         }
 
         return resultVector;
+    }
+
+    public static void applyFormulaToInt(Integer i) {
+
+        i *= 2;
+    }
+
+    public static void applyFormula(Vector<Integer> vect)   {
+
+        for (int i = 0; i < vect.size(); i++)   {
+
+            applyFormulaToInt(vect.get(i));
+        }
     }
 }
