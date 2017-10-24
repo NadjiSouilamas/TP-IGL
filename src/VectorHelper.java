@@ -67,7 +67,7 @@ public class VectorHelper{
         }
         catch (DifferentVectorSizeException e)  {
 
-            System.out.println("Error: the vector1 & vector2 sizes are not equals");
+            System.out.println("Error: the vector1 and vector2 sizes are not equals");
         }
 
         return sumVector;
