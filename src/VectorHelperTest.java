@@ -19,16 +19,16 @@ public class VectorHelperTest {
         vect1.add(14);
         vect1.add(12);
         vect1.add(30);
-        vect1.add(100);
+        vect1.add(32);
         vect1.add(21);
         vect1.add(0);
 
         vect2 = new Vector<>();
         vect2.add(3);
         vect2.add(2);
-        vect2.add(10);
+        vect2.add(1);
         vect2.add(100);
-        vect2.add(9);
+        vect2.add(98);
         vect2.add(333);
     }
 
