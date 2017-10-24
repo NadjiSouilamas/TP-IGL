@@ -33,7 +33,15 @@ public class VectorHelperTest {
     }
 
     @Test
-    public void trierVector() throws Exception  { }
+    public void trierVector() throws Exception  {
+
+        VectorHelper.trierVector(vect1);
+        for(int i = 0; i < vect1.size() - 1; i++){
+
+            boolean isLowerThanSucc = vect1.get(i) < vect1.get(i+1);
+            assertTrue("Erreur dans le tri", isLowerThanSucc);
+        }
+    }
 
     @Test
     public void sumVectors() throws Exception {
@@ -50,7 +58,19 @@ public class VectorHelperTest {
     }
 
     @Test
-    public void inverserVector() throws Exception {    }
+    public void inverserVector() throws Exception {
+
+        Vector<Integer> initialVect = new Vector<Integer>();
+        initialVect = ( Vector<Integer> ) vect1.clone();
+
+        VectorHelper.inverserVector(vect1);
+
+        for(int i = 0; i < vect1.size(); i++){
+
+            boolean areSwitched = vect1.get(i) == initialVect.get( initialVect.size() - 1 - i );
+            assertTrue("Erreur dans la procédure d'inversion", areSwitched);
+        }
+    }
 
     @Test
     public void getMinAndMax() throws Exception {

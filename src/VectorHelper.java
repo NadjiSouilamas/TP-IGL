@@ -81,18 +81,14 @@ public class VectorHelper{
     public static void inverserVector(Vector<Integer> t){
 
         int indexMax = t.size() - 1;
-        System.out.println(" SIZE : "+indexMax);
         int indexMid = t.size() / 2 ;
-        System.out.println(" middle : "+indexMid);
         int x;
+
         for( int i=0;i< indexMid ; i++){
 
             x = t.get(indexMax-i);
-            System.out.println(" loop : "+i+"\tt["+(indexMax-i)+"] : "+x);
-
             t.set(indexMax-i,t.get(i));
             t.set(i,x);
-
         }
     }
 
