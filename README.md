@@ -22,5 +22,3 @@ You can find the documentation for classes here: [Doc](https://github.com/johnle
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
