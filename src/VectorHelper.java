@@ -121,16 +121,16 @@ public class VectorHelper{
         return resultVector;
     }
 
-    public static void applyFormulaToInt(Integer i) {
+    public static Integer applyFormulaToInt(Integer i) {
 
-        i *= 2;
+       return (i * 2);
     }
 
     public static void applyFormula(Vector<Integer> vect)   {
 
         for (int i = 0; i < vect.size(); i++)   {
 
-            applyFormulaToInt(vect.get(i));
+            vect.set(i,applyFormulaToInt(vect.get(i)));
         }
     }
 }
