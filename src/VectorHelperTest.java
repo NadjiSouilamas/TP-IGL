@@ -16,6 +16,8 @@ public class VectorHelperTest {
     @Before
     public void setUp() throws Exception {
 
+
+      
         v1.add(14);
         v1.add(12);
         v1.add(30);
